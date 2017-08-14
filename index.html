@@ -11,17 +11,22 @@
     <script src="node_modules/react/dist/react.js"></script>
     <script src="node_modules/react-dom/dist/react-dom.js"></script>
     <script>
-        var div = React.DOM.div
-        var h1 = React.DOM.h1
-
-        var MyFirstComponent = (
-            div(null,
-                h1(null, 'This is my first component!'),
-                h1(null, 'This is my first component!')
+        const ce = React.createElement;
+        const MyTitle = function(props) {
+            return (
+                ce('div', null,
+                  ce('h1', null, props.title))
             )
-        )
+        }
 
-        ReactDOM.render(MyFirstComponent, document.getElementById('app'))
+        const MyFirstComponent = function() {
+            return (ce('div', { id: 'my-first-component' },
+                        ce(MyTitle, { title: 'Game of Thrones' }),
+                        ce(MyTitle, { title: 'The Chase' })
+                    ));
+        }
+
+        ReactDOM.render(ce(MyFirstComponent), document.getElementById('app'))
     </script>
 </body>
 </html>
