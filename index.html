@@ -15,14 +15,14 @@
         const MyTitle = function(props) {
             return (
                 ce('div', null,
-                  ce('h1', null, props.title))
+                  ce('h1', { style: { color: props.color }}, props.title))
             )
         }
 
         const MyFirstComponent = function() {
             return (ce('div', { id: 'my-first-component' },
-                        ce(MyTitle, { title: 'Game of Thrones' }),
-                        ce(MyTitle, { title: 'The Chase' })
+                        ce(MyTitle, { title: 'Game of Thrones', color: 'YellowGreen' }),
+                        ce(MyTitle, { title: 'The Chase', color: 'GreenYellow' })
                     ));
         }
 
