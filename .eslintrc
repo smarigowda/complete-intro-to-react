@@ -1,0 +1,19 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2016,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "extends": "standard",
+  "rules": {
+    "jsx-a11y/href-no-hash": "off",
+    "react/prefer-stateless-function": 0
+  }
+}
