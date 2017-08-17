@@ -9,7 +9,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   resolve: {
-    estensions: ['.js', '.jsx', '.json']
+    extensions: ['.js', '.jsx', '.json']
   },
   stats: {
     colors: true,
