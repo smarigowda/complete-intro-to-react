@@ -2,8 +2,6 @@ import React from 'react'
 import { render } from 'react-dom'
 const ce = React.createElement
 const MyTitle = function (props) {
-  // return ce('div', null, ce('h1', { style: { color: props.color } }, props.title))
-  // const style = { color: props.color }
   return (
     <div>
       <h1 style={ { color: props.color } }>{props.title}</h1>
@@ -12,12 +10,12 @@ const MyTitle = function (props) {
 }
 
 const MyFirstComponent = function () {
-  return ce(
-    'div',
-    { id: 'my-first-component' },
-    ce(MyTitle, { title: 'Game of Thrones', color: 'YellowGreen' }),
-    ce(MyTitle, { title: 'The Chase', color: 'GreenYellow' }),
-    ce(MyTitle, { title: 'Grand Design UK', color: '#f06' })
+  return (
+    <div id="my-first-component">
+      <MyTitle title="Game of Thromes" color="YellowGreen" />
+      <MyTitle title="The Chase" color="GreenYellow" />
+      <MyTitle title="Grand Design" color="#f06" />
+    </div>
   )
 }
 
