@@ -6,7 +6,9 @@
   "author": "Brian Holt <btholt@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint **/*.{js,jsx} --quiet"
+    "lint": "eslint **/*.{js,jsx} --quiet",
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "dependencies": {
     "axios": "0.9.1",
