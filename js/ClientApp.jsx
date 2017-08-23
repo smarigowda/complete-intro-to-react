@@ -12,9 +12,10 @@ const MyTitle = function (props) {
 const MyFirstComponent = function () {
   return (
     <div id="my-first-component">
+      <input type="text"/>
       <MyTitle title="Game of Thromes" color="YellowGreen" />
       <MyTitle title="The Chase" color="GreenYellow" />
-      <MyTitle title="Grand Design" color="#f06" />
+      <MyTitle title="Grand Design" color="burlywood" />
     </div>
   )
 }
