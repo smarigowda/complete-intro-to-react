@@ -14,6 +14,11 @@
   "extends": "standard",
   "rules": {
     "jsx-a11y/href-no-hash": "off",
-    "react/prefer-stateless-function": 0
-  }
+    "react/prefer-stateless-function": 0,
+    "jsx/uses-factory": [1, {"pragma": "JSX"}],
+    "jsx/factory-in-scope": [1, {"pragma": "JSX"}],
+    "jsx/mark-used-vars": 1,
+    "jsx/no-undef": 1
+  },
+  "plugins": ["react", "jsx"]
 }

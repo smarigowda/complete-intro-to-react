@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-const ce = React.createElement
+// const ce = React.createElement
 const MyTitle = function (props) {
   return (
     <div>
@@ -21,17 +21,4 @@ const MyFirstComponent = function () {
   )
 }
 
-const SignUpForm = function () {
-  return (
-    <div>
-      <form action="/signup" method="post">
-        <div>
-          <label for="name">Name: </label>
-          <input type="text"></input>
-        </div>
-      </form>
-    </div>
-  )
-}
-
-render(ce(MyFirstComponent), document.getElementById('app'))
+render(<MyFirstComponent />, document.getElementById('app'))
