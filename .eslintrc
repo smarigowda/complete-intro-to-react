@@ -15,7 +15,7 @@
   "rules": {
     "jsx-a11y/href-no-hash": "off",
     "jsx/uses-factory": [1, {"pragma": "JSX"}],
-    "jsx/factory-in-scope": [1, {"pragma": "JSX"}],
+    "jsx/factory-in-scope": [0, {"pragma": "jsx"}],
     "jsx/mark-used-vars": 1,
     "jsx/no-undef": 1
   },
