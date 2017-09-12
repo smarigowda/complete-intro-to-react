@@ -1,6 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 
+const x = 5;
+
 const App = () => (
   <div className="app">
     <div className="landing">
@@ -9,3 +11,5 @@ const App = () => (
       <a>or Browse All</a>
     </div>
   </div>);
+
+render(<App />, document.getElementById('app'));
